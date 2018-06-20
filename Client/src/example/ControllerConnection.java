@@ -39,10 +39,10 @@ public class ControllerConnection implements ControllerManager{
                     s.close();
                 }
                 InputStream instream = connection.getInputStream();
-                String recibir;
+                String response;
                 try (ObjectInputStream e = new ObjectInputStream(instream)) {
-                    recibir = (String) e.readObject();
-                    System.out.println(recibir);
+                    response = (String) e.readObject();
+                    System.out.println(response);
                     e.close();
                     return true;
                 }

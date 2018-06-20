@@ -36,7 +36,7 @@ public class ExampleServlet extends HttpServlet {
             
             InputStream instream = request.getInputStream();
             ObjectInputStream e = new ObjectInputStream(instream);
-            String orden = (String) e.readObject();
+            String solicit = (String) e.readObject();
             
             OutputStream outstream;
             outstream = response.getOutputStream();

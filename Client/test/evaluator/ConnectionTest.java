@@ -13,8 +13,8 @@ public class ConnectionTest {
     
     @Test
     public void evaluatorConnectionTest() {
-        ControllerManager cm  = new ControllerConnection();
-        Assert.assertEquals(true, cm.Connection());
+        ControllerManager connect  = new ControllerConnection();
+        Assert.assertEquals(true, connect.Connection());
     }
     
 }
